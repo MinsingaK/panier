@@ -1,5 +1,4 @@
 <?php
-
     class DB{
 
         private $host = 'localhost';
@@ -12,7 +11,7 @@
         {
             if($host != null){
                 $this->host = $host;
-                $this->username = $nomuser;
+                $this->nomuser = $nomuser;
                 $this->password = $password;
                 $this->database = $database;
             }

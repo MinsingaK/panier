@@ -20,12 +20,12 @@
         <?php foreach($products as $product): ?>
             <form action="" class="produit">
                 <div class="image_product">
-                    <img src="images/<?= $product->img ?>" alt="">
+                    <img src="images/<?= $product->img ?>" alt="image du plat">
                 </div>
                 <div class="content">
                     <h4 class="name"><?= $product->name ?></h4>
                     <h2 class="price"><?= number_format($product->price, 2,',','') ?>€</h2>
-                    <a href="#" class="id_product">Ajouter au panier</a>
+                    <a href="ajouter_panier.php?id=<?= $product->id ?>" class="id_product">Ajouter au panier</a>
                 </div>
             </form>
         <?php endforeach ?>
